@@ -1,2 +1,2 @@
 # ObjCVendoredFramework
-A project to demonstrate how an Objective-C framework can be exposed to a Swift project as a Cocoapods vendored framework 
+A project to demonstrate how an Objective-C framework can be installed into a Swift project by Cocoapods as a vendored framework 
