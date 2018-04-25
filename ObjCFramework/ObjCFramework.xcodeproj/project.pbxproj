@@ -12,7 +12,7 @@
 		199F81542090FD2800A8C423 /* ObjCFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 199F81462090FD2800A8C423 /* ObjCFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		199F815F2090FD3800A8C423 /* ObjCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 199F815D2090FD3800A8C423 /* ObjCClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		199F81602090FD3800A8C423 /* ObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 199F815E2090FD3800A8C423 /* ObjCClass.m */; };
-		199F81C820912AAA00A8C423 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 199F81C720912AAA00A8C423 /* VungleSDK.framework */; };
+		199F823F2091376200A8C423 /* VungleSDK in Frameworks */ = {isa = PBXBuildFile; fileRef = 199F823E2091376200A8C423 /* VungleSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +35,7 @@
 		199F815D2090FD3800A8C423 /* ObjCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCClass.h; sourceTree = "<group>"; };
 		199F815E2090FD3800A8C423 /* ObjCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCClass.m; sourceTree = "<group>"; };
 		199F81C720912AAA00A8C423 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
+		199F823E2091376200A8C423 /* VungleSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = VungleSDK; path = VungleSDK.framework/VungleSDK; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				199F81C820912AAA00A8C423 /* VungleSDK.framework in Frameworks */,
+				199F823F2091376200A8C423 /* VungleSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +65,7 @@
 				199F81452090FD2800A8C423 /* ObjCFramework */,
 				199F81502090FD2800A8C423 /* ObjCFrameworkTests */,
 				199F81442090FD2800A8C423 /* Products */,
+				199F823D2091376200A8C423 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +96,14 @@
 				199F81532090FD2800A8C423 /* Info.plist */,
 			);
 			path = ObjCFrameworkTests;
+			sourceTree = "<group>";
+		};
+		199F823D2091376200A8C423 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				199F823E2091376200A8C423 /* VungleSDK */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +365,10 @@
 				INFOPLIST_FILE = ObjCFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VungleSDK.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BB.ObjCFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -378,6 +392,10 @@
 				INFOPLIST_FILE = ObjCFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VungleSDK.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.BB.ObjCFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
