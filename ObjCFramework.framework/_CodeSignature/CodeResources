@@ -4,17 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		6PbahegYdD+RTbqIU7cgaGNByCE=
-		</data>
 		<key>Headers/ObjCClass.h</key>
 		<data>
 		BldmRJwSwpDzK3y7AtvhcoOgbgo=
 		</data>
 		<key>Headers/ObjCFramework.h</key>
 		<data>
-		11ytFGVq3RjidR+5oid0Hx2yF40=
+		dQ5rXq1sYch0JVxKUmxIiytypvo=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -42,11 +38,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			11ytFGVq3RjidR+5oid0Hx2yF40=
+			dQ5rXq1sYch0JVxKUmxIiytypvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			oSpYUUGl+vWC8gOrMEIR13D3ma8ICm3OgcrulakWUkQ=
+			YdK/Qqx0PI1AZg+Eobjg3oZDw7G2al+WPAtSAXpCGgs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
