@@ -10,6 +10,6 @@
 
 @interface ObjCClass : NSObject
 
-- (void)doSomething;
+- (void)doSomethingWithVungle;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ObjCClass.h"
+#import <VungleSDK/VungleSDK.h>
 
 @implementation ObjCClass
 
@@ -17,8 +18,10 @@
     return self;
 }
 
-- (void)doSomething {
-    NSLog(@"ObjC class did something");
+- (void)doSomethingWithVungle {
+    NSLog(@"ObjC class did something with Vungle");
+    VungleSDK *sharedVungle = [VungleSDK sharedSDK];
+    [sharedVungle setLoggingEnabled:YES];
 }
 
 @end
